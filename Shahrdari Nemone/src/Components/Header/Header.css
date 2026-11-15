@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.Header-Container{
+  background-color: rgb(8, 8, 8);
+  /* z-index: 0; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 36px;
+}
+.Header {
+  display: flex;
+  justify-content: end;
+  /* background-color: blue; */
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+.Header-rowcontainer{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end; */
+  align-items: end;
+  height: 100%;
+  width: 200px;
+  /* background-color: blueviolet; */
+}
+.Header-row{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+  width: 90%;
+  /* background-color: green; */
+  cursor: pointer;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  transition: background-color 0.15s;
+}
+.Header-row:hover{
+  background-color: rgb(87, 87, 87);
+}
+.Header-row .Header-icon{
+  color: rgb(255, 230, 0);
+  margin-left: 14px;
+  /* flex: 35%; */
+  display: grid;
+  place-items: center;
+}
+.Header-row .Header-title{
+  /* flex: 65%; */
+  display: grid;
+  place-items: end;
+}
+
+@media (max-width: 700px) {
+  .Header-row .Header-icon{
+    display: none;
+  }
+  .Header-row .Header-title{
+    margin-right: 20px;
+  }
+  /* .Header-row:hover{
+    background-color: rgb(8, 8, 8);
+  } */
+}
