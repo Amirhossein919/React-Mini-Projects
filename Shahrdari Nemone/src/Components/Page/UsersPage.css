@@ -1,156 +1,166 @@
-.Users {
+.Users{
+  background-color: rgba(186, 241, 255, 0.063);
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.Layout{
+  height: 100%;
+  width: 98%;
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  min-height: 100vh;
+  align-self: center;
+  justify-self: center;
+  transition: width 0.15s ease-in-out
 }
 
-.Main{
+.Form{
+  width: 99%;
+
   display: flex;
+  flex-direction: column;
   flex: 1;
+  min-height: 0;
+  align-self: center;
+  justify-self: center;
 }
-
-.Form {
-  background-color: rgba(70, 64, 64, 0);
-  flex: 1;
-  width: 90%;
-  height: 90%;
-  margin-top: 3rem;
-}
-
-.Form-Header {
-  display: flex;
-  align-items: center;
-  background-color: rgba(95, 95, 95, 0.082);
-  width: 100%;
-  height: 42px;
-  align-items: center;
-  border-radius: 5px;
-}
-
-.Page-Path {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  width: 60%;
-  height: 30px;
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: 6px;
-}
-
-.Page-Path a {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-
-.Homepage-Path {
-  background-color: rgba(0, 0, 255, 0);
-}
-.Path {
-  align-content: center;
-}
-
-.Homepage-Path, .Path{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 10px;
-  height: 100%;
-  color: black;
-}
-
-.LogOut-btn {
-  background-color: red;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.15s;
-  font-size: 16px;
-  margin-left: 6px;
-  width: 78px;
-  height: 30px;
-  font-family: inherit;
-}
-.LogOut-btn:hover {
-  background-color: rgba(255, 0, 0, 0.432);
-}
-.LogOut-btn:active{
-  background-color: rgb(220, 0, 0);
-}
-.LogOut-text {
-  margin: 0px 2px 5px 4px;
-}
-.LogOut-icon {
-  scale: 0.8;
-}
-
-.hr-Form-Header, .hr-Form-Body {
-  margin-top: 12px;
-  margin-bottom: 14px;
-  background-color: black;
-}
-.hr-Form-Body{
-  width: 97%;
-  margin: 0 auto;
+.Form.Minimal{
+  width: calc(100% - 210px);
+  align-self: start;
 }
 
 .Form-Body{
-  background-color: rgba(65, 0, 0, 0);
+  margin-top: 10px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.219);
+
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.138);
-  height: 90%;
+  flex: 1;
+  min-height: 0;
 }
 
 .Form-Body-Upper{
   width: 100%;
-  height: 20%;
+  height: 110px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-self: center;
   justify-content: end;
 }
 
 .Search-Options{
+  font-size: 14px;
+  width: 18%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: end;
-  justify-content: center;
-  height: 90%;
-  width: 30%;
+}
+
+.CaseNumber{
+  width: 80%;
+  height: 50%;
   margin-right: 8px;
+
+  gap: 20px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.AllCases{
+  width: 80%;
+  height: 50%;
+  margin-right: 8px;
+
+  gap: 10px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .Search-Options2{
+  width: 32%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   justify-content: center;
-  height: 90%;
-  width: 40%;
+
+  gap: 26px;
+
+  transition: width 0.25s;
 }
+
+.Search-btn-Container{
+  width: 96%;
+  height: 30px;
+
+  display: flex;
+  justify-content: start;
+  align-self: center;
+}
+
+.Search-btn{
+  color: white;
+  background-color: rgb(36, 117, 210);
+  width: 50%;
+
+  border: none;
+  border-radius: 4px;
+  font-family: "Vazirmatn";
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.Search-btn:hover{
+  opacity: 0.7;
+}
+.Search-btn:active{
+  opacity: 1;
+}
+
+.Search-btn-icon{
+  margin-top: 5px
+}
+
 .SearchCase-Field{
-  background-color: rgba(98, 98, 98, 0.233);
+  background: transparent;
   width: 100%;
   height: 32px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 6px;
 }
+
 .SearchCase-Field input{
-  background: transparent;
-  font-size: 0.9rem;
-  outline: none;
-  border: none;
+  background-color: rgba(210, 208, 208, 0.556);
+  width: 96%;
   height: 100%;
-  width: 98%;
+  padding: 0 14px;
+
+  font-family: "Vazirmatn";
+  font-size: 14px;
   text-align: end;
-  font-family: inherit;
+
+  border-radius: 4px;
+  border: none;
+  outline: none;
 }
 
 input[type="search"]::-webkit-search-cancel-button{
@@ -158,168 +168,102 @@ input[type="search"]::-webkit-search-cancel-button{
   appearance: none;
 }
 
-.Search-btn{
-  width: 150px;
-  height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  gap: 6px;
-
-  color: white;
-  background-color: blue;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.15s;
-  font-family: inherit;
-}
-
-.Search-btn-icon{
-  margin-top: 5px;
-}
-
-.Search-btn:hover{
-  background-color: rgb(0, 0, 152);
-}
-
-.SearchCase-Field, .Search-btn{
-  margin-top: 16px;
-}
-
-.Search-Options, .Search-Options2{
-  display: flex;
-  flex-direction: column;
-}
-
-.CaseNumber, .AllCases{
-  display: flex;
-  margin: 10px 0;
-}
-.CaseNumber p, .AllCases p{
-  margin-right: 10px;
-}
-.CaseNumber input, .AllCases input{
-  margin-right: 20px;
-}
-
 .Form-Body-Lower{
+  width: 98%;
+  margin: 10px 10px 30px 10px;
+  padding-bottom: 20px;
+
   display: flex;
   flex-direction: column;
-  margin: 25px auto;
-  width: 95%;
-  height: 80%;
+
+  justify-self: center;
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
 }
 
-@media (max-width: 890px){
+.hr-Form-Body{
+  width: 98%;
+
+  justify-self: center;
+}
+
+@media(max-width: 1000px){
+  .Form.Minimal{
+    .Form-Body-Upper{
+      justify-content: space-between;
+    }
+    .Search-Options{
+      width: 30%;
+    }
+    .Search-Options2{
+      width: 60%;
+      margin-left: 10px;
+    }
+    .Search-btn{
+      width: 40%;
+    }
+    .SearchCase-Field{
+      width: 90%;
+    }
+    .AllCases{
+      margin-right: 8px;
+    }
+    .AllCases, .CaseNumber{
+      width: 90%;
+    }
+  }
+  .Search-Options{
+    font-size: 13px;
+  }
+}
+
+@media(max-width: 600px){
+  .Users {
+    height: calc(100vh - 50px);
+  }
   .Form{
-    scale: 0.96;
+    .AllCases,.CaseNumber{
+      width: 90%;
+    }
   }
-  .Page-Path{
-    font-size: 12px;
-  }
-  .LogOut-btn{
-    scale: 0.9;
+  .Form.Minimal{
+    width: 99%;
+    justify-self: center;
+    align-self: center;
+
+    .Form-Body-Upper{
+      justify-content: end;
+    }
+    .Search-Options{
+      width: 40%;
+    }
+    .Search-Options2{
+      width: 60%;
+      margin-left: 10px;
+    }
+    .SearchCase-Field{
+      width: 90%;
+    }
+    .Search-btn{
+      width: 60%;
+    }
   }
   .Form-Body-Upper{
-    scale: 0.9;
+    justify-content: end;
   }
   .Search-Options{
     width: 40%;
-    height: 50%;
-    font-size: 14px;
   }
   .Search-Options2{
     width: 60%;
-    height: 50%;
-    font-size: 14px;
-  }
-  .SearchCase-Field input{
-    width: 90%;
-    height: 30px;
-    font-size: 12px;
+    margin-left: 10px;
   }
   .SearchCase-Field{
-    height: 32px;
+    width: 90%;
   }
   .Search-btn{
-    width: 110px;
-    height: 30px;
-  }
-  .Search-btn-icon, .Search-btn-title{
-    scale: 0.9;
-  }
-}
-
-@media (max-width: 455px) {
-  .Form{
-    scale: 0.96;
-    overflow-y: auto;
-  }
-  .Main{
-    min-height: 100%;
-  }
-  .Page-Path{
-    font-size: 12px;
-  }
-  .LogOut-btn{
-    scale: 0.9;
-  }
-  .Form-Body-Upper{
-    scale: 0.9;
-  }
-  .Search-Options{
-    width: 40%;
-    height: 50%;
-    font-size: 14px;
-  }
-  .Search-Options2{
     width: 60%;
-    height: 50%;
-    font-size: 14px;
-  }
-  .SearchCase-Field input{
-    width: 90%;
-    height: 30px;
-    font-size: 12px;
-  }
-  .SearchCase-Field{
-    height: 32px;
-  }
-  .Search-btn{
-    width: 110px;
-    height: 30px;
-  }
-  .Search-btn-icon, .Search-btn-title{
-    scale: 0.9;
   }
 }
-@media (max-width: 375px) {
-  .Form{
-    scale: 0.96;
-  }
-  .Page-Path{
-    font-size: 12px;
-  }
-  .Form-Body-Upper{
-    scale: 0.96;
-  }
-  .SearchCase-Field{
-    height: 32px;
-  }
-  .Search-btn{
-    width: 110px;
-    height: 30px;
-  }
-  .Search-btn-icon, .Search-btn-title{
-    scale: 0.9;
-  }
-}
-@media (max-width:600px){
 
-  .Form{
-    padding-bottom:70px;
-  }
-
-}

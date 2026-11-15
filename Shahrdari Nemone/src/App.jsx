@@ -9,14 +9,14 @@ import PageNotFound from "./Components/Page/Unfinished/PageNotFound.jsx"
 
 import LoginPage from "./Components/Page/Unfinished/Login.jsx"
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom"
 
 function App() {
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <UsersPage />,
+      element: <Navigate to="/Confirms" replace />,
       errorElement: <PageNotFound />
     },
     {
@@ -32,7 +32,7 @@ function App() {
     },
     {
       path: "/Confirms",
-      element: <Confirms />,
+      element: <UsersPage />,
       errorElement: <PageNotFound />
     },
     {
