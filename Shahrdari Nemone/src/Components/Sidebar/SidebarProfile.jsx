@@ -5,10 +5,11 @@ function SidebarProfile() {
     <div className="SidebarProfile">
       <div className="Image-Container">
         <img src={ProfileImage} alt="SiteImage" className="Image" />
-        <p>Shahrdari-Nemone</p>
+        <p>شهرداری نمونه</p>
       </div>
       <div className="Info">
-        <p>Sarparast System</p>
+        <p> سرپرست کل</p>
+        <p>سرپرست سیستم</p>
       </div>
     </div>
   );

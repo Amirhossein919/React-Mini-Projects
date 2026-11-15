@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 
 import Sidebar from "../Sidebar/Sidebar.jsx";
-import SidebarM from "../Sidebar/SidebarM.jsx";
+import SidebarM from "../Sidebar/MobileNavbar.jsx";
 import Navbar from "../Header/Navbar.jsx";
 import "./UsersPage.css";
 
