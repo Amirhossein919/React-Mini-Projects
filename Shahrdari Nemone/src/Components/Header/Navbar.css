@@ -1,0 +1,30 @@
+.Navbar{
+  background-color: rgb(5, 45, 69);
+  color: white;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 34px;
+}
+
+.Navbar-row{
+  width: 140px;
+  font-size: 14px;
+  
+  display: flex;
+  justify-content: space-around;
+
+  cursor: pointer;
+}
+
+.Navbar-icon{
+  display: none;
+  color: rgb(255, 230, 0);
+}
+
+@media(max-width: 600px){
+  .Navbar{
+    display: none;
+  }
+}

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import Sidebar from "../Sidebar/Sidebar.jsx";
 import SidebarM from "../Sidebar/SidebarM.jsx";
-import Header from "../Header/Header.jsx";
+import Navbar from "../Header/Navbar.jsx";
 import "./UsersPage.css";
 
 import Table from "../Page/Table/Table.jsx";
@@ -37,7 +37,7 @@ function UsersPage() {
 
   return (
     <div className="Users">
-      <Header toggleSidebar={toggleSidebar} />
+      <Navbar toggleSidebar={toggleSidebar} />
       <div className="Main">
         <div className="Form">
           <div className="Form-Header">
